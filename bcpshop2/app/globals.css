@@ -31,3 +31,19 @@ body {
     text-wrap: balance;
   }
 }
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: slateblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fish {
+  color: red;
+  height: min(98vh, 900px);
+  width : min(98vw, 1800px);
+  border: 2px solid white;
+}
