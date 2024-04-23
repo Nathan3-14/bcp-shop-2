@@ -48,7 +48,7 @@
 
 .top,
 .bottom {
-    height: 50%;
+    height: 50vh;
 
     display: flex;
 }
@@ -203,7 +203,7 @@
     z-index: -1;
     top: -5%;
     left: -2.5%;
-    animation: spin 2.5s linear infinite;
+    /* animation: spin 2.5s linear infinite; */
 }
 
 .login::after {
@@ -218,7 +218,7 @@
     margin: 0 auto;
     /* transform: scale(0.8); */
     /* filter: blur(calc(var(--button-height) / 6)); */
-    filter: blur(1rem);
+    filter: blur(2rem);
     background-image: conic-gradient(from var(--rotate),
             #00c8ff,
             #c300ff,
@@ -237,7 +237,7 @@
             #4e00c2); */
     opacity: 1;
     transition: opacity 0.5s;
-    animation: spin 2.5s linear infinite;
+    /* animation: spin 2.5s linear infinite; */
     border-radius: inherit;
 }
 
@@ -286,7 +286,7 @@
     z-index: -1;
     top: -5%;
     left: -2.5%;
-    animation: spin 2.5s linear infinite reverse;
+    /* animation: spin 2.5s linear infinite reverse; */
 }
 
 .sign_up::after {
@@ -314,7 +314,7 @@
             #4e00c2); */
     opacity: 1;
     transition: opacity 0.5s;
-    animation: spin 2.5s linear infinite;
+    /* animation: spin 2.5s linear infinite; */
     border-radius: 6px;
 }
 

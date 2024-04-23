@@ -1,5 +1,6 @@
 import styles from "./home.module.css"
 import bg from './gradient.png'
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -18,9 +19,10 @@ export default function Home() {
         </div>
 
         <div className={ styles.login_wrapper }>
-            <div
+            <Link
                 className={`${ styles.button } ${ styles.login }`}
                 // onclick="window.location='./login/'"
+                href="/login"
             >Log In</div>
         </div>
 
