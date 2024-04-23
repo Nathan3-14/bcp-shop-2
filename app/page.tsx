@@ -31,12 +31,12 @@ export default function Home() {
               Sign Up
             </div>
           </div>
-          <style>{`
+          {/* <style>{`
             html,
             body {
               overflow: hidden;
             }
-          `}</style>
+          `}</style> */}
       </div>
     </>
   );

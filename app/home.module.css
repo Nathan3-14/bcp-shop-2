@@ -148,6 +148,8 @@
 .main {
     --button-height: 75px;
     --button-width: 150px;
+
+    height: 100vh;
 }
 
 @property --rotate {
@@ -193,12 +195,6 @@
             #00c8ff,
             #c300ff,
             #00c8ff);
-    /* background-image: conic-gradient(from var(--rotate),
-            #5ddcff,
-            #3c67e3,
-            #4e00c2,
-            #3c67e3,
-            #5ddcff); */
     position: absolute;
     z-index: -1;
     top: -5%;
