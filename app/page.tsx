@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <main className={ styles.main }>
+    <div className={ styles.main }>
       {/* <div className="fish">
         <h1>Hello!</h1>
       </div> */}
@@ -39,6 +39,6 @@ export default function Home() {
             overflow: hidden;
           }
         `}</style>
-    </main>
+    </div>
   );
 }
