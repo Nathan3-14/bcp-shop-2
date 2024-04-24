@@ -3,7 +3,7 @@ import bg from '@/styles/gradient.png'
 import Link from "next/link"
 import Gradient from "@/app/lib/stripe-gradient/src/Gradient.js"
 
-grad = new Gradient({
+const grad = new Gradient({
   canvas: '.main',
   colors: [
     '#ff0000',
