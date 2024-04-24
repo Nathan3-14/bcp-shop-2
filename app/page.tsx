@@ -1,13 +1,20 @@
 import styles from "@/styles/home.module.css"
 import bg from '@/styles/gradient.png'
 import Link from "next/link"
+import dynamic from "next/dynamic"
 // import Gradient from "@/app/lib/gradient.js"
 
-var gradient = require('@/app/lib/gradient.js')
-var grad = new gradient.Gradient();
-grad.initGradient("#gradient-canvas");
+var gradient = dynamic(() => import "@/app/lib/gradient.js", { ssr: false })
 
 export default function Home() {
+  useEffect(() => {
+    gradient.then((module) => {
+      const Gradient = module.default;
+      const grad = new Gradient();
+      grad.initGradient("#gradient-canvas");
+    });
+  }, []);
+
   return (
     <>
       <div className={styles.main} id={styles.gradient_canvas}>
