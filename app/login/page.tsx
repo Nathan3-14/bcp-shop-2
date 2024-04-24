@@ -1,3 +1,5 @@
+import styles from "@/styles/login/login.module.css"
+
 export default function LoginPage() {
   return (
     <>

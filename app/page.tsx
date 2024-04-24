@@ -1,6 +1,20 @@
 import styles from "@/styles/home.module.css"
 import bg from '@/styles/gradient.png'
 import Link from "next/link"
+import Gradient from "@/app/lib/stripe-gradient/src/Gradient.js"
+
+grad = new Gradient({
+  canvas: '.main',
+  colors: [
+    '#ff0000',
+    '#ff7f00',
+    '#ffff00',
+    '#00ff00',
+    '#0000ff',
+    '#4b0082',
+    '#8f00ff'
+  ]
+})
 
 export default function Home() {
   return (
@@ -9,7 +23,9 @@ export default function Home() {
         {/* <div className="fish">
           <h1>Hello!</h1>
           </div> */}
-        <div className={styles.land} style={{ backgroundImage: `url(${bg.src})` }}> {/* style needed for bg img to work */}
+        <div className={styles.land} style={
+          {/* { backgroundImage: `url(${bg.src})` } */}
+        }> {/* style needed for bg img to work */}
           <div className={styles.top}>
             <h1 className={styles.top_title}>WELCOME TO</h1>
           </div>
