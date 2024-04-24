@@ -1,4 +1,4 @@
-import styles from "./home.module.css"
+import styles from "@/styles/home.module.css"
 import bg from './gradient.png'
 import Link from "next/link"
 
