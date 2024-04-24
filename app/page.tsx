@@ -1,9 +1,10 @@
 import styles from "@/styles/home.module.css"
 import bg from '@/styles/gradient.png'
 import Link from "next/link"
-import Gradient from "@/app/lib/gradient.js"
+// import Gradient from "@/app/lib/gradient.js"
 
-const grad = new Gradient()
+var gradient = require('@/app/lib/gradient.js')
+var grad = new gradient.Gradient();
 grad.initGradient("#gradient-canvas");
 
 export default function Home() {
