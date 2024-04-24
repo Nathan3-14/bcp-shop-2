@@ -1,25 +1,14 @@
 import styles from "@/styles/home.module.css"
 import bg from '@/styles/gradient.png'
 import Link from "next/link"
-import Gradient from "@/app/lib/stripe-gradient/src/Gradient.js"
+import Gradient from "@/app/lib/gradient.js"
 
-const grad = new Gradient({
-  canvas: '.main',
-  colors: [
-    '#ff0000',
-    '#ff7f00',
-    '#ffff00',
-    '#00ff00',
-    '#0000ff',
-    '#4b0082',
-    '#8f00ff'
-  ]
-})
+const grad = new Gradient()
 
 export default function Home() {
   return (
     <>
-      <div className={styles.main}>
+      <div className={styles.main} id={styles.gradient_canvas}>
         {/* <div className="fish">
           <h1>Hello!</h1>
           </div> */}

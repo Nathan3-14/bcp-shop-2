@@ -144,6 +144,17 @@
     height: 100vh;
 }
 
+#gradient_canvas {
+  width:100%;
+  height:100%;
+  --gradient-color-1: #0000ff; 
+  --gradient-color-2: #00ff4f; 
+  --gradient-color-3: #7100ef;  
+  --gradient-color-4: #00ff00;
+  z-index:0;
+}
+
+
 @property --rotate {
     syntax: "<angle>";
     initial-value: 132deg;
