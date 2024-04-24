@@ -11,7 +11,7 @@ import Canvas from "@/app/components/Canvas"
 export default function Home() {
   return (
     <>
-      <Canvas />
+      <Canvas colors='#00f #3a3aff #00fff0 #50f0f0'/>
       <div className={styles.main}>
         {/* <div className="fish">
           <h1>Hello!</h1>

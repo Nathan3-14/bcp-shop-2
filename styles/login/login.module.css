@@ -7,11 +7,30 @@
 }
 
 .login_window {
-    background-color: black;
+    background-color: transparent;
     margin: auto;
     width: min(2000px, 90vw);
     height: min(1000px, 85vh);
 
     border: 2px solid white;
     border-radius: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* test */
+
+.left {
+    border-radius: 1.9rem 0 0 1.9rem;
+    border-right: white 2px solid;
+    background-color: black;
+}
+
+.right {
+    border-radius: 0 1.9rem 1.9rem 0;
+    background-color: #00000039;
+    -webkit-backdrop-filter: blur(2rem);
+            backdrop-filter: blur(2rem);
+
 }

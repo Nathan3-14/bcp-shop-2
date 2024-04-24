@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useRef, useEffect, ReactNode } from "react";
-import styles from "@/styles/home.module.css";
 import { Gradient } from "@/app/lib/StripeGradient";
 
 const Canvas = (props) => {
@@ -12,16 +11,37 @@ const Canvas = (props) => {
 		gradient.initGradient("#gradient-canvas");
 	}, []);
 
+	var colors = props.colors.split(' ')
+	console.log(colors)
+	console.log(colors[0])
+
 	return (
-		<canvas
-			className={styles.canvas}
-			id="gradient-canvas"
-			ref={canvasRef2}
-			{...props}
-			data-transition-in
-		>
-			{props.children}
-		</canvas>
+		<>
+			<canvas
+				className=''
+				id="gradient-canvas"
+				ref={canvasRef2}
+				{...props}
+				data-transition-in
+			>
+				{props.children}
+			</canvas>
+
+			<style>{`
+				#gradient-canvas {
+					--gradient-color-1: ${ colors[0] ? colors[0] : '#000' };
+					--gradient-color-2: ${ colors[1] ? colors[1] : '#000' };
+					--gradient-color-3: ${ colors[2] ? colors[2] : '#000' };
+					--gradient-color-4: ${ colors[3] ? colors[3] : '#000' };
+
+					height: 100vh;
+					width: 100%;
+				
+					position: absolute;
+					z-index: -10;
+				}
+			`}</style>
+		</>
 	);
 };
 
