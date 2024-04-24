@@ -8,7 +8,7 @@ import Material from './Material.js';
 import Mesh from './Mesh.js';
 import PlaneGeometry from './PlaneGeometry.js';
 
-class Gradient {
+export default class Gradient {
 
     /**
      * Class reference used primarily for static properties.
