@@ -1,5 +1,5 @@
 import styles from "@/styles/home.module.css"
-import bg from './gradient.png'
+import bg from '@/styles/gradient.png'
 import Link from "next/link"
 
 export default function Home() {
