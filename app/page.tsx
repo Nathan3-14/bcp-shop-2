@@ -4,6 +4,7 @@ import Link from "next/link"
 import Gradient from "@/app/lib/gradient.js"
 
 const grad = new Gradient()
+grad.initGradient("#gradient-canvas");
 
 export default function Home() {
   return (
