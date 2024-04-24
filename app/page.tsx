@@ -4,7 +4,7 @@ import Link from "next/link"
 import dynamic from "next/dynamic"
 // import Gradient from "@/app/lib/gradient.js"
 
-var gradient = dynamic(() => import "@/app/lib/gradient.js", { ssr: false })
+var gradient = dynamic(() => import("@/app/lib/gradient.js"), { ssr: false })
 
 export default function Home() {
   useEffect(() => {
