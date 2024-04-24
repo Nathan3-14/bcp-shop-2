@@ -1,12 +1,18 @@
 import styles from "@/styles/home.module.css"
 import bg from '@/styles/gradient.png'
 import Link from "next/link"
-// import Gradient from "@/app/lib/gradient.js"
+import Canvas from "@/app/components/Canvas"
+
+// var GradientCanv = dynamic(
+//   () => import('@/app/components/canv'),
+//   { ssr: false }
+// )
 
 export default function Home() {
   return (
     <>
-      <div className={styles.main} id={styles.gradient_canvas}>
+      <Canvas />
+      <div className={styles.main}>
         {/* <div className="fish">
           <h1>Hello!</h1>
           </div> */}
