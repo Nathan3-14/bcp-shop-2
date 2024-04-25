@@ -8,7 +8,7 @@
 
 .login_window {
     background-color: transparent;
-    /* margin: auto; */
+    margin: auto;
     width: min(2000px, 90vw);
     height: min(1000px, 85vh);
 
