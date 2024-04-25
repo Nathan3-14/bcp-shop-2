@@ -5,7 +5,7 @@
 *,
 *::before,
 *::after {
-  /* border: 1px solid green; */
+  border: 1px solid green;
 }
 
 :root {
